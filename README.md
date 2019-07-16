@@ -1,3 +1,5 @@
+![Apollo 11](https://bitbucket.org/ruhksn/apollo-11-timeline/raw/07acec42c846dad592a2a3e294905deb65c37a02/apollo-11-timeline.png)
+
 A simple **R** project to:
 
 - Generate data on the Apollo 11 mission
