@@ -29,9 +29,10 @@ apollo11$day_Time <- round(as.numeric(sub("\\:.*", "", apollo11$Time))/24,0)+1
 
 # Generate timeline plot
 aplot<-ggplot(apollo11,aes(reorder(Time, sort(as.numeric(Time))), y=0, label=Milestone))+
-  labs(col="Milestones",
-       title="Apollo 11 Timeline",
-       x="Time elapsed (HH:MM:SS)")+
+  labs(col = "Milestones",
+       title = "Apollo 11 Timeline",
+       x = "Time elapsed (HH:MM:SS)",
+       caption = "created by Ru Hickson 2019-07-16")+
   theme_classic()+
   geom_hline(yintercept=0, color = "black", size=0.3)+
   geom_segment(apollo11, mapping=aes(y=position,yend=0,xend=Time), color="black", size=0.2) +
