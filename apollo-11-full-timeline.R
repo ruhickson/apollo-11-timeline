@@ -8,7 +8,7 @@ library(magick)
 library(stringr)
 
 # Scrape Full List of Events from NASA's website
-apollo11<-read_html("https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm") %>% 
+apollo11<-read_html("https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm", "rb") %>% 
   html_nodes("body div table") %>%
   html_table(header = TRUE, trim = TRUE, fill = FALSE, dec = ".")
 
